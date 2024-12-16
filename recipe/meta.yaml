@@ -36,6 +36,7 @@ requirements:
     - chemicalite
     - pytest
     - numpy <1.24
+    - biopython<=1.76
 
 
 test:
