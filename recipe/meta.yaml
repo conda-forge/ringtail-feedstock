@@ -22,12 +22,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.12
     - setuptools >=61.0
     - pip
   run:
     - meeko >=0.6.1
-    - python >=3.9
+    - python >=3.9,<3.12
     - rdkit
     - scipy
     - matplotlib-base
