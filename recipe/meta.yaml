@@ -35,6 +35,7 @@ requirements:
     - multiprocess
     - chemicalite
     - pytest
+    - numpy <1.24
 
 
 test:
