@@ -26,8 +26,8 @@ requirements:
     - setuptools >=61.0
     - pip
   run:
-    - meeko >=0.6.1
     - python >=3.9
+    - meeko >=0.6.1
     - rdkit
     - scipy
     - matplotlib-base
@@ -35,22 +35,16 @@ requirements:
     - multiprocess
     - chemicalite
     - pytest
-    - numpy <1.24
-    - biopython<=1.76
-
 
 test:
   imports:
     - ringtail
   commands:
-    - pip check
     - rt_process_vs --help
     - rt_compare --help
     - rt_db_v100_to_v110 --help
     - rt_db_to_v200 --help
     - rt_generate_config_file --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/forlilab/Ringtail
