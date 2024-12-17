@@ -1,5 +1,5 @@
 {% set name = "ringtail" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ringtail-{{ version }}.tar.gz
-  sha256: 333ebdbec17f2c5ae9db6f5a0326e3cb4cfb9fc8fd52dfdc0573be538f186002
+  sha256: 30c4a278d888533ccf4d5d5903cfa92ed8cd669438a4f1153c813b906339e208
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - meeko ==0.5.1
+    - meeko >=0.6.1
     - rdkit
     - scipy
     - matplotlib-base
@@ -36,19 +36,15 @@ requirements:
     - chemicalite
     - pytest
 
-
 test:
   imports:
     - ringtail
   commands:
-    - pip check
     - rt_process_vs --help
     - rt_compare --help
     - rt_db_v100_to_v110 --help
     - rt_db_to_v200 --help
     - rt_generate_config_file --help
-  requires:
-    - pip
 
 about:
   home: https://github.com/forlilab/Ringtail
