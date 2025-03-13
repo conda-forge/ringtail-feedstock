@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   entry_points:
     - rt_process_vs=ringtail.cli.rt_process_vs:main
     - rt_compare=ringtail.cli.rt_compare:main
@@ -22,7 +22,7 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.10
     - setuptools >=61.0
     - pip
   run:
