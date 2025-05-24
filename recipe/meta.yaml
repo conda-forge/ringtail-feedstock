@@ -1,5 +1,5 @@
 {% set name = "ringtail" %}
-{% set version = "2.1.2" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ringtail-{{ version }}.tar.gz
-  sha256: 7c62d7598d76099dd8a185521a8451b2279f44a8bd6770c9d8172b55e710c316
+  sha256: 2645d4fca610ca5c2eb76f2c0badf906d89f1635177097c85ecb5758c3d43ccf
 
 build:
   noarch: python
